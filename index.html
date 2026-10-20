@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eedc">
+  <meta name="description" content="Marina Valérielle — Retro-inspired private yacht charters and island escapes.">
+  <title>Marina Valérielle — The Art of Escaping</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announcement">
+    <span>PRIVATE YACHT ESCAPES · EST. 2026</span>
+    <span class="announcement-right">A slower kind of luxury <span>✳</span></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="top">
+    <a class="brand" href="#home" aria-label="Marina Valérielle home">
+      <span class="brand-symbol">MV</span>
+      <span class="brand-name">MARINA<br>VALÉRIELLE</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#destinations" data-th="จุดหมาย" data-en="Destinations">จุดหมาย</a>
+      <a href="#fleet" data-th="เรือยอร์ช" data-en="Our fleet">เรือยอร์ช</a>
+      <a href="#experiences" data-th="กิจกรรม" data-en="Experiences">กิจกรรม</a>
+      <a href="#about" data-th="เกี่ยวกับเรา" data-en="Our story">เกี่ยวกับเรา</a>
+      <a href="#booking" class="nav-cta" data-th="วางแผนการเดินทาง ↗"
+         data-en="Plan your escape ↗">วางแผนการเดินทาง ↗</a>
+    </nav>
+
+    <button class="language-switch" id="languageSwitch" type="button">EN / TH</button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section-pad" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> YOUR PRIVATE BLUE HORIZON</div>
+
+        <h1 data-th="ปล่อยเวลา<br>ให้ไหลไปกับ<br><em>ท้องทะเล</em>"
+            data-en="Let time drift<br>into the <em>blue.</em>">
+          ปล่อยเวลา<br>ให้ไหลไปกับ<br><em>ท้องทะเล</em>
+        </h1>
+
+        <p class="hero-description"
+           data-th="ออกเดินทางสู่เกาะลับ น้ำทะเลสีเทอร์ควอยซ์ และช่วงเวลาที่เป็นของคุณ ผ่านประสบการณ์เรือยอร์ชส่วนตัวในแบบ Marina Valérielle"
+           data-en="Discover hidden islands, turquoise waters, and unhurried moments aboard your own private yacht.">
+          ออกเดินทางสู่เกาะลับ น้ำทะเลสีเทอร์ควอยซ์ และช่วงเวลาที่เป็นของคุณ
+          ผ่านประสบการณ์เรือยอร์ชส่วนตัวในแบบ Marina Valérielle
+        </p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-dark">ค้นหาการเดินทาง <span>↗</span></a>
+          <a href="#destinations" class="text-link">สำรวจเกาะ <span>↓</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>03</strong><span>PRIVATE ISLANDS</span></div>
+          <div><strong>01</strong><span>YOUR OWN HORIZON</span></div>
+          <div><strong>∞</strong><span>WAYS TO ESCAPE</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-stamp">THE<br>SUMMER<br>COLLECTION<br><span>NO. 001</span></div>
+
+        <div class="sun"></div>
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1400&q=85"
+            alt="เรือยอร์ชส่วนตัวกลางทะเลสีฟ้า">
+        </div>
+
+        <div class="art-caption">
+          <span>FIG. 01 — THE OPEN SEA</span>
+          <span>15° 12' N · 100° 31' E</span>
+        </div>
+        <div class="art-orbit"></div>
+      </div>
+
+      <div class="hero-bottom-note">
+        <span>MADE FOR THE MOMENTS BETWEEN DESTINATIONS</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+    </section>
+
+    <!-- Live widget bar -->
+    <section class="status-strip">
+      <div class="status-item">
+        <span class="status-dot"></span>
+        <span>THE SEA IS CALLING</span>
+      </div>
+      <div class="status-item">
+        <span>LOCAL TIME</span>
+        <strong id="liveClock">--:--:--</strong>
+      </div>
+      <div class="status-item">
+        <span>YOUR NEXT ESCAPE</span>
+        <a href="#booking">START HERE ↗</a>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations section-pad" id="destinations">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE ISLAND POSTCARDS / 01</div>
+          <h2>เกาะที่รอให้คุณ<br><em>ค้นพบ</em></h2>
+        </div>
+        <p>สามจุดหมายในโลกสมมติของเรา แต่ละเกาะมีจังหวะชีวิตและความทรงจำต่างกัน</p>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card destination-large">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1100&q=85"
+              alt="ทะเลสีฟ้าใสและชายหาดเขตร้อน" loading="lazy">
+            <span class="image-number">01 / 03</span>
+            <span class="image-tag">THE SIGNATURE ISLAND</span>
+          </div>
+          <div class="destination-info">
+            <div><h3>Pearl Lagoon</h3><p>เกาะรูปหัวใจ · น้ำทะเลใส · ดินเนอร์ริมอ่าว</p></div>
+            <a href="#booking" class="round-arrow" aria-label="สำรวจ Pearl Lagoon">↗</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85"
+              alt="เกลียวคลื่นและทะเลสีเขียวฟ้า" loading="lazy">
+            <span class="image-number">02 / 03</span>
+          </div>
+          <div class="destination-info">
+            <div><h3>Île Céleste</h3><p>แนวปะการัง · ป่าเขียว · ดำน้ำ</p></div>
+            <a href="#booking" class="round-arrow" aria-label="สำรวจ Île Céleste">↗</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=85"
+              alt="ชายหาดและทะเลในช่วงพระอาทิตย์ตก" loading="lazy">
+            <span class="image-number">03 / 03</span>
+          </div>
+          <div class="destination-info">
+            <div><h3>Serein Cay</h3><p>หาดทรายสงบ · ชมดาว · พระอาทิตย์ตก</p></div>
+            <a href="#booking" class="round-arrow" aria-label="สำรวจ Serein Cay">↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="fine-print">* ชื่อเกาะและแพ็กเกจเป็นส่วนหนึ่งของคอนเซปต์ธุรกิจสมมติ</p>
+    </section>
+
+    <!-- Fleet -->
+    <section class="fleet-section section-pad" id="fleet">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE FLOATING COLLECTION / 02</div>
+          <h2>เลือกจังหวะ<br><em>ของการเดินทาง</em></h2>
+        </div>
+        <div class="carousel-controls">
+          <button id="fleetPrev" class="circle-control" aria-label="ก่อนหน้า">←</button>
+          <button id="fleetNext" class="circle-control" aria-label="ถัดไป">→</button>
+        </div>
+      </div>
+
+      <div class="fleet-track" id="fleetTrack">
+        <article class="fleet-card">
+          <img src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1100&q=85"
+            alt="เรือยอร์ชส่วนตัว" loading="lazy">
+          <div class="fleet-card-overlay">
+            <span>01 / THE CLASSIC</span>
+            <h3>Valérielle One</h3>
+            <p>เหมาะสำหรับคู่รักหรือทริปส่วนตัวขนาดเล็ก</p>
+            <div class="fleet-facts"><span>PRIVATE CHARTER</span><span>HALF / FULL DAY</span></div>
+          </div>
+        </article>
+
+        <article class="fleet-card">
+          <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?auto=format&fit=crop&w=1100&q=85"
+            alt="เรือยอร์ชสำหรับการพักผ่อน" loading="lazy">
+          <div class="fleet-card-overlay">
+            <span>02 / THE EXPLORER</span>
+            <h3>Azure Voyager</h3>
+            <p>เดินทางสำรวจอ่าวและจุดหมายหลายแห่ง</p>
+            <div class="fleet-facts"><span>ISLAND HOPPING</span><span>FULL DAY</span></div>
+          </div>
+        </article>
+
+        <article class="fleet-card">
+          <img src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1100&q=85"
+            alt="เรือยอร์ชหรูสำหรับทริปกลุ่ม" loading="lazy">
+          <div class="fleet-card-overlay">
+            <span>03 / THE GRANDE</span>
+            <h3>Maison du Bleu</h3>
+            <p>พื้นที่กว้างสำหรับการพักผ่อนร่วมกัน</p>
+            <div class="fleet-facts"><span>GROUP ESCAPE</span><span>PRIVATE CHARTER</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="experiences section-pad" id="experiences">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">LITTLE PLEASURES / 03</div>
+          <h2>เติมเรื่องราว<br><em>ให้วันพิเศษ</em></h2>
+        </div>
+        <p>เลือกกิจกรรมตามอารมณ์ของวัน ไม่ต้องรีบ ไม่ต้องเหมือนใคร</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="กรองกิจกรรม">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด / All</button>
+        <button class="filter-btn" data-filter="sea">ทะเล / Sea</button>
+        <button class="filter-btn" data-filter="slow">พักผ่อน / Slow</button>
+        <button class="filter-btn" data-filter="night">ยามค่ำ / Night</button>
+      </div>
+
+      <div class="experience-grid" id="experienceGrid">
+        <article class="experience-card" data-category="slow">
+          <span class="experience-index">01</span><span class="experience-icon">☼</span>
+          <h3>Bluewater Wellness</h3>
+          <p>เริ่มเช้าวันใหม่ด้วยโยคะเบา ๆ และเวลาพักผ่อนริมทะเล</p>
+          <span class="experience-type">SLOW LIVING</span>
+        </article>
+        <article class="experience-card" data-category="sea">
+          <span class="experience-index">02</span><span class="experience-icon">≈</span>
+          <h3>Reef & Rendezvous</h3>
+          <p>ออกสำรวจโลกใต้น้ำและชมแนวปะการังตามพื้นที่ที่เหมาะสม</p>
+          <span class="experience-type">OCEAN EXPLORATION</span>
+        </article>
+        <article class="experience-card" data-category="night">
+          <span class="experience-index">03</span><span class="experience-icon">☾</span>
+          <h3>Cinema Beneath the Stars</h3>
+          <p>ชมภาพยนตร์กลางแจ้งใต้ท้องฟ้ายามค่ำคืน</p>
+          <span class="experience-type">AFTER DARK</span>
+        </article>
+        <article class="experience-card" data-category="sea">
+          <span class="experience-index">04</span><span class="experience-icon">✳</span>
+          <h3>Golden Hour Sail</h3>
+          <p>ล่องเรือชมแสงเย็นและเก็บภาพความทรงจำเหนือผืนน้ำ</p>
+          <span class="experience-type">SUNSET CRUISE</span>
+        </article>
+        <article class="experience-card" data-category="slow">
+          <span class="experience-index">05</span><span class="experience-icon">♡</span>
+          <h3>Private Picnic</h3>
+          <p>ปิกนิกส่วนตัวพร้อมอาหารว่างในบรรยากาศริมอ่าว</p>
+          <span class="experience-type">PRIVATE MOMENTS</span>
+        </article>
+        <article class="experience-card" data-category="night">
+          <span class="experience-index">06</span><span class="experience-icon">✦</span>
+          <h3>Stargazer's Hour</h3>
+          <p>พักผ่อนบนดาดฟ้าเรือและมองหากลุ่มดาวในคืนฟ้าเปิด</p>
+          <span class="experience-type">NIGHT ESCAPE</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brand story -->
+    <section class="story-section section-pad" id="about">
+      <div class="story-visual">
+        <div class="story-sun"></div>
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=85"
+          alt="ผืนน้ำทะเลสะท้อนแสงแดด" loading="lazy">
+        <span class="story-seal">THE ART<br>OF SLOW<br>TRAVEL</span>
+      </div>
+      <div class="story-copy">
+        <div class="eyebrow">A NOTE FROM THE COAST / 04</div>
+        <h2>ความหรูหรา<br>อาจเป็นเพียง<br><em>เวลาที่ไม่ต้องรีบ</em></h2>
+        <p>Marina Valérielle เกิดจากแนวคิดว่าการเดินทางที่ดีไม่จำเป็นต้องมีตารางแน่นเต็มวัน บางครั้งสิ่งที่ดีที่สุดคือทะเลที่สงบ ลมอุ่น และคนที่เราอยากใช้เวลาด้วย</p>
+        <p>เราออกแบบประสบการณ์ให้เรียบง่าย เป็นส่วนตัว และมีรายละเอียดเล็ก ๆ ที่ทำให้วันธรรมดากลายเป็นความทรงจำ</p>
+        <a href="#booking" class="text-link">เริ่มเขียนเรื่องราวของคุณ ↗</a>
+      </div>
+    </section>
+
+    <!-- Interactive booking widget -->
+    <section class="booking-section section-pad" id="booking">
+      <div class="booking-intro">
+        <div class="eyebrow">YOUR PERSONAL ITINERARY / 05</div>
+        <h2>วันหยุดครั้งต่อไป<br><em>เป็นของคุณ</em></h2>
+        <p>เลือกจุดหมาย วันที่ และจำนวนผู้เดินทาง เพื่อสร้างคำขอจองตัวอย่าง</p>
+        <div class="booking-note"><span>✳</span> แผนการเดินทางนี้เป็นตัวอย่าง ยังไม่ใช่การจองจริง</div>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <label for="destination">จุดหมายปลายทาง / DESTINATION</label>
+        <select id="destination" name="destination" required>
+          <option value="Pearl Lagoon">Pearl Lagoon — The Signature Island</option>
+          <option value="Île Céleste">Île Céleste — The Nature Escape</option>
+          <option value="Serein Cay">Serein Cay — The Sunset Retreat</option>
+        </select>
+
+        <div class="form-two">
+          <div>
+            <label for="travelDate">วันที่เดินทาง / DATE</label>
+            <input id="travelDate" name="travelDate" type="date" required>
+          </div>
+          <div>
+            <label for="duration">ระยะเวลา / DURATION</label>
+            <select id="duration" name="duration">
+              <option value="Half day">ครึ่งวัน / Half day</option>
+              <option value="Full day">เต็มวัน / Full day</option>
+              <option value="Multi-day">หลายวัน / Multi-day</option>
+            </select>
+          </div>
+        </div>
+
+        <label>จำนวนผู้เดินทาง / GUESTS</label>
+        <div class="guest-counter">
+          <span>ผู้ใหญ่ / Adults</span>
+          <div class="counter-controls">
+            <button type="button" class="counter-btn" data-step="-1" aria-label="ลดจำนวนผู้ใหญ่">−</button>
+            <output id="guestCount">2</output>
+            <button type="button" class="counter-btn" data-step="1" aria-label="เพิ่มจำนวนผู้ใหญ่">+</button>
+          </div>
+        </div>
+
+        <label for="travelStyle">สไตล์การเดินทาง / TRAVEL MOOD</label>
+        <select id="travelStyle" name="travelStyle">
+          <option value="Relaxation">พักผ่อนและชมวิว</option>
+          <option value="Adventure">ผจญภัยและดำน้ำ</option>
+          <option value="Romantic">โรแมนติกและชมพระอาทิตย์ตก</option>
+          <option value="Celebration">ฉลองวันพิเศษ</option>
+        </select>
+
+        <button class="btn btn-dark btn-full" type="submit">สร้างแผนการเดินทาง ↗</button>
+        <p class="form-disclaimer">ไม่มีการชำระเงินหรือส่งข้อมูลออกจากเว็บไซต์นี้</p>
+      </form>
+
+      <div class="booking-result" id="bookingResult" hidden aria-live="polite">
+        <div class="eyebrow">YOUR POSTCARD IS READY</div>
+        <h3>แผนการเดินทางของคุณ</h3>
+        <div id="bookingSummary"></div>
+        <button class="btn btn-outline" id="copyBooking" type="button">คัดลอกแผนการเดินทาง</button>
+      </div>
+    </section>
+
+    <!-- FAQ accordion -->
+    <section class="faq-section section-pad" id="faq">
+      <div class="faq-heading">
+        <div class="eyebrow">THE LITTLE DETAILS / 06</div>
+        <h2>คำถามที่พบบ่อย</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>สามารถออกแบบเส้นทางเองได้หรือไม่ <span>＋</span></summary>
+          <p>ในแนวคิดของบริการนี้ ผู้เดินทางสามารถเลือกเกาะ กิจกรรม และบรรยากาศที่ต้องการได้ โดยขึ้นอยู่กับเวลาเดินทางและความปลอดภัยทางทะเล</p>
+        </details>
+        <details class="faq-item">
+          <summary>ควรเตรียมอะไรไปบนเรือบ้าง <span>＋</span></summary>
+          <p>แนะนำครีมกันแดดที่เหมาะกับทะเล หมวก แว่นกันแดด เสื้อผ้าสำรอง และยาประจำตัว หากมีข้อจำกัดด้านสุขภาพควรแจ้งผู้จัดทริปล่วงหน้า</p>
+        </details>
+        <details class="faq-item">
+          <summary>สามารถจัดกิจกรรมสำหรับวันพิเศษได้ไหม <span>＋</span></summary>
+          <p>สามารถออกแบบเป็นแนวคิดสำหรับวันเกิด วันครบรอบ ปิกนิกส่วนตัว หรือชมพระอาทิตย์ตกได้ตามแพ็กเกจที่กำหนด</p>
+        </details>
+        <details class="faq-item">
+          <summary>แบบฟอร์มจองนี้ส่งข้อมูลจริงหรือไม่ <span>＋</span></summary>
+          <p>ไม่ใช่ แบบฟอร์มนี้เป็นเดโมฝั่งหน้าเว็บ ข้อมูลจะไม่ถูกส่งไปยังเซิร์ฟเวอร์และยังไม่ถือเป็นการจองจริง</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Newsletter widget -->
+    <section class="newsletter section-pad">
+      <div>
+        <div class="eyebrow">LETTERS FROM THE SEA</div>
+        <h2>รับโปสการ์ด<br><em>จากปลายขอบฟ้า</em></h2>
+        <p>สมัครรับแรงบันดาลใจสำหรับการเดินทางครั้งต่อไป</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <label for="newsletterEmail">อีเมลของคุณ</label>
+        <div class="newsletter-input-row">
+          <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
+          <button type="submit" aria-label="สมัครรับข่าวสาร">↗</button>
+        </div>
+        <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+        <small>เดโมสำหรับแสดงผลเท่านั้น ไม่มีการบันทึกอีเมล</small>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-symbol">MV</span>
+      <span class="brand-name">MARINA<br>VALÉRIELLE</span>
+    </a>
+    <p>THE ART OF ESCAPING, THE BEAUTY OF SLOWING DOWN.</p>
+    <div class="footer-links">
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#booking">Plan your escape</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MARINA VALÉRIELLE · FICTIONAL BRAND CONCEPT</span>
+      <a href="#top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Back-to-top floating widget -->
+  <button id="backToTop" class="back-to-top" aria-label="กลับขึ้นด้านบน">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
